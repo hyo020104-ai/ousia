@@ -10,6 +10,14 @@
 <meta name="apple-mobile-web-app-title" content="Öusia">
 <title>Öusia</title>
 <style>
+/* SUIT Variable — SIL Open Font License 1.1, SUNN (sun.fo/suit) */
+@font-face{
+  font-family:'SUIT Variable';
+  font-weight:100 900;
+  font-display:swap;
+  src:url('../fonts/SUIT-Variable.woff2') format('woff2-variations');
+}
+
 
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
@@ -49,7 +57,7 @@ html{-webkit-text-size-adjust:100%;background:var(--paper);overflow-x:hidden}
 body,.top,.tabs,.card,.prod,.ci,.plate,.reel__i{transition:background-color .4s var(--ease-soft),color .4s var(--ease-soft)}
 body{
   background:var(--paper);color:var(--fg);font-family:var(--font-ui);
-  font-weight:400;letter-spacing:-.03em;overscroll-behavior-y:none;
+  font-weight:400;letter-spacing:-.05em;overscroll-behavior-y:none;
   -webkit-font-smoothing:antialiased;
 }
 img{display:block;max-width:100%}
@@ -149,8 +157,8 @@ body.is-detail .top__bar{opacity:.85}
 .meta{font-size:9.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;opacity:.42}
 .hair{height:1px;background:var(--hair)}
 
-.h1{font-size:30px;font-weight:800;line-height:1.1;letter-spacing:-.04em}
-.h2{font-size:19px;font-weight:700;line-height:1.3;letter-spacing:-.03em}
+.h1{font-size:30px;font-weight:800;line-height:1.1;letter-spacing:-.05em}
+.h2{font-size:19px;font-weight:700;line-height:1.3;letter-spacing:-.05em}
 .lead{font-size:12.5px;line-height:2.1;color:var(--mute);word-break:keep-all}
 .body{font-size:13px;line-height:2.05;opacity:.84;word-break:keep-all}
 .en{font-size:11px;line-height:1.78;opacity:.42;word-break:normal}
@@ -169,11 +177,11 @@ img[data-img].ready{opacity:1;transform:none}
 .brand{padding:18px 18px 22px}
 .brand__k{display:flex;align-items:center;gap:8px}
 .brand__k i{width:16px;height:1px;background:var(--fg);opacity:.3}
-.brand__t{margin-top:14px;font-size:38px;font-weight:800;line-height:1.02;letter-spacing:-.045em}
+.brand__t{margin-top:14px;font-size:38px;font-weight:800;line-height:1.02;letter-spacing:-.05em}
 .brand__s{margin-top:14px;font-size:12px;line-height:1.85;color:var(--mute);word-break:keep-all;max-width:30ch}
 
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;padding:34px var(--gut) 24px}
-.sec-head h2{font-size:17px;font-weight:700;letter-spacing:-.03em}
+.sec-head h2{font-size:17px;font-weight:700;letter-spacing:-.05em}
 
 .cards{padding:0 var(--gut) 0;position:relative}
 /* 카드가 차례로 쌓인다 — 위 카드가 덮을수록 아래 카드는 작아지며 물러난다.
@@ -203,12 +211,12 @@ img[data-img].ready{opacity:1;transform:none}
   display:inline-flex;align-items:center;gap:5px;height:28px;padding:0 11px;
   border-radius:999px;background:rgba(14,14,16,.38);
   -webkit-backdrop-filter:saturate(1.6) blur(16px);backdrop-filter:saturate(1.6) blur(16px);
-  color:#FBFAF7;font-size:10.5px;font-weight:600;letter-spacing:-.01em;
+  color:#FBFAF7;font-size:10.5px;font-weight:600;letter-spacing:-.05em;
   box-shadow:inset 0 0 0 1px rgba(251,250,247,.16)
 }
 .card__chips{position:absolute;top:18px;left:18px;right:18px;display:flex;gap:6px}
 .card__meta{position:absolute;left:22px;right:68px;bottom:22px;color:#FBFAF7}
-.card__t{font-size:22px;font-weight:800;letter-spacing:-.04em;line-height:1.12;display:block}
+.card__t{font-size:22px;font-weight:800;letter-spacing:-.05em;line-height:1.12;display:block}
 .card__p{margin-top:5px;font-size:10px;font-weight:600;opacity:.62;letter-spacing:.06em;
   text-transform:uppercase;display:block}
 .card__go{
@@ -227,16 +235,16 @@ img[data-img].ready{opacity:1;transform:none}
   background:linear-gradient(to bottom,rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 38%,rgba(0,0,0,.72) 100%)}
 .d-hero__cap{position:absolute;left:var(--gut);right:var(--gut);bottom:34px;color:#FBFAF7;z-index:2}
 .d-hero__i{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
-.d-hero__t{margin-top:9px;font-size:31px;font-weight:800;letter-spacing:-.04em;line-height:1.08}
+.d-hero__t{margin-top:9px;font-size:31px;font-weight:800;letter-spacing:-.05em;line-height:1.08}
 
 .d-intro{padding:72px var(--gut) 0}
 .d-sec{padding:132px var(--gut) 0}
 .d-sec__top{display:flex;align-items:baseline;gap:14px}
-.d-sec__h{flex:1 1 auto;font-size:20px;font-weight:700;letter-spacing:-.035em}
+.d-sec__h{flex:1 1 auto;font-size:20px;font-weight:700;letter-spacing:-.05em}
 .d-sec__b{margin-top:30px}
 .d-quote{padding:140px 30px 0;text-align:center}
 .d-quote__m{width:18px;height:1px;background:var(--fg);opacity:.25;margin:0 auto 18px}
-.d-quote__k{font-size:15.5px;font-weight:600;line-height:1.62;letter-spacing:-.035em;word-break:keep-all}
+.d-quote__k{font-size:15.5px;font-weight:600;line-height:1.62;letter-spacing:-.05em;word-break:keep-all}
 .d-quote__e{margin-top:16px;font-size:11px;font-weight:500;line-height:1.62;opacity:.4}
 .plates{display:flex;flex-direction:column;gap:28px;margin-top:124px;padding:0 var(--gut)}
 .plate{width:100%;border-radius:var(--r-md);overflow:hidden;background:var(--ph);box-shadow:var(--sh-1)}
@@ -286,7 +294,7 @@ img[data-img].ready{opacity:1;transform:none}
   transition:opacity .2s linear,width .25s var(--ease)}
 .prod__dots i.on{opacity:.7;width:13px;border-radius:2px}
 .prod__row{display:flex;align-items:baseline;gap:10px;margin-top:14px;padding:0 4px}
-.prod__n{font-size:14.5px;font-weight:700;letter-spacing:-.03em}
+.prod__n{font-size:14.5px;font-weight:700;letter-spacing:-.05em}
 .prod__l{font-size:10.5px;color:var(--mute);margin-left:auto}
 .prod__p{margin-top:3px;padding:0 4px;font-size:13px;font-weight:600;opacity:.72}
 .prod__go{margin-top:14px;width:100%;height:48px;border-radius:999px;
@@ -300,7 +308,7 @@ img[data-img].ready{opacity:1;transform:none}
 /* ============ 에디토리얼 ============ */
 .ed-panel{background:var(--panel);color:var(--on-panel);
   margin:68px var(--gut);padding:60px 26px 64px;border-radius:var(--r-lg);box-shadow:var(--sh-2)}
-.ed-big{font-size:33px;font-weight:900;letter-spacing:-.03em;line-height:1.08}
+.ed-big{font-size:33px;font-weight:900;letter-spacing:-.05em;line-height:1.08}
 .ed-big--g{opacity:.38;margin-top:2px}
 .ed-quote{margin-top:34px;font-size:13px;line-height:1.95;opacity:.88;word-break:keep-all}
 .ed-quote-en{margin-top:22px;font-size:11px;line-height:1.78;opacity:.45}
@@ -326,7 +334,7 @@ img[data-img].ready{opacity:1;transform:none}
 .ci__th{width:76px;height:98px;border-radius:var(--r-sm);background:var(--ph);
   overflow:hidden;grid-row:span 2}
 .ci__th img{width:100%;height:100%;object-fit:cover}
-.ci__n{font-size:13.5px;font-weight:700;letter-spacing:-.03em;padding-top:4px}
+.ci__n{font-size:13.5px;font-weight:700;letter-spacing:-.05em;padding-top:4px}
 .ci__l{font-size:10.5px;color:var(--mute);margin-top:3px}
 .ci__p{font-size:12.5px;opacity:.78;margin-top:6px}
 .ci__x{grid-column:3;align-self:start;opacity:.35;font-size:13px;padding:4px 2px 4px 10px}
@@ -344,7 +352,7 @@ img[data-img].ready{opacity:1;transform:none}
   box-shadow:var(--sh-2);
   display:none;align-items:center;justify-content:space-between;
   animation:vIn .4s var(--ease) both}
-.cart-bar b{font-size:15.5px;font-weight:700;letter-spacing:-.02em}
+.cart-bar b{font-size:15.5px;font-weight:700;letter-spacing:-.05em}
 .cart-bar button{height:40px;padding:0 20px;border-radius:999px;
   background:#141414;color:#F2F1ED;
   font-size:11px;font-weight:700;letter-spacing:.08em}
@@ -352,14 +360,14 @@ img[data-img].ready{opacity:1;transform:none}
 /* ============ 구독 ============ */
 .sub-card{background:var(--panel);color:var(--on-panel);margin:16px var(--gut);
   padding:38px 26px 38px;border-radius:var(--r-lg);box-shadow:var(--sh-2)}
-.sub-card h2{font-size:28px;font-weight:800;letter-spacing:-.035em}
+.sub-card h2{font-size:28px;font-weight:800;letter-spacing:-.05em}
 .sub-card .k{margin-top:8px;font-size:10px;font-weight:600;opacity:.55;letter-spacing:.05em}
 .sub-card .l{margin-top:12px;font-size:11.5px;line-height:1.85;opacity:.78;word-break:keep-all}
 .f-label{display:block;margin-top:22px;font-size:10px;opacity:.6;letter-spacing:.05em}
 .f-in{margin-top:8px;width:100%;height:46px;border-radius:var(--r-sm);
   background:color-mix(in srgb, var(--on-panel) 11%, transparent);border:0;outline:0;
   padding:0 14px;font-family:inherit;font-size:13.5px;font-weight:500;color:var(--on-panel);
-  letter-spacing:-.03em;
+  letter-spacing:-.05em;
   transition:box-shadow .2s linear, background .2s linear}
 .f-in::placeholder{color:color-mix(in srgb, var(--on-panel) 34%, transparent)}
 .f-in:focus{background:color-mix(in srgb, var(--on-panel) 17%, transparent);
@@ -379,7 +387,7 @@ img[data-img].ready{opacity:1;transform:none}
 .f-chk span{font-size:11px;opacity:.78}
 .f-go{margin-top:26px;width:100%;height:52px;border-radius:999px;
   background:var(--on-panel);color:var(--panel);
-  font-size:15px;font-weight:800;letter-spacing:-.02em;
+  font-size:15px;font-weight:800;letter-spacing:-.05em;
   display:flex;align-items:center;justify-content:center}
 .f-go[disabled]{opacity:.5}
 .f-msg{margin-top:14px;font-size:11px;color:#FF8A86;min-height:14px;line-height:1.6}
