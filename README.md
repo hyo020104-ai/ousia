@@ -11,3 +11,13 @@ CNAME        연결할 도메인
 ```
 
 GitHub Pages: Settings → Pages → Source `main` / `(root)`
+
+## 구성
+
+```
+/          데스크톱 웹사이트
+/app/      모바일 앱 버전 (사진은 /img 를 함께 쓴다)
+/img/      사진 137장 — 양쪽이 공유
+```
+
+폰에서 `/` 로 들어오면 `/app/` 으로 보낸다 (netlify.toml). 주소를 직접 치면 양쪽 다 그대로 열린다.

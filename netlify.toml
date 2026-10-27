@@ -14,3 +14,11 @@
   for = "/index.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# 폰으로 첫 화면에 들어오면 모바일 앱 버전으로 보낸다
+[[redirects]]
+  from = "/"
+  to = "/app/"
+  status = 302
+  force = false
+  conditions = {Device = ["mobile"]}
